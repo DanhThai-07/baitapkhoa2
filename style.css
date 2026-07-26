@@ -1,0 +1,46 @@
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+}
+.skip-link:focus {
+  top: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px;
+}
+.navbar a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.navbar a:hover {
+  color: yellow;
+}
+.styled-img {
+  border: 3px solid #555;
+  padding: 5px;
+  border-radius: 10px;
+  width: 200px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.styled-img:hover {
+  transform: scale(1.1) rotate(3deg);
+  opacity: 0.8;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  justify-items: center;
+}
+.gallery-grid img:nth-child(odd) {
+  border-radius: 50px;
+}
